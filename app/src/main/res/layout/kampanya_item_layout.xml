@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/kampanyaCardView"
+        android:clickable="true"
+        card_view:cardBackgroundColor="#b7d0ff"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardElevation="5dp">
+
+        <LinearLayout
+            android:id="@+id/kampanyaLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/kampanyaLayoutBaslik"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:text="name"
+                android:textColor="#fb4040" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/kampanyaLayoutpetimage"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+
+                android:gravity="center"
+                android:layout_margin="10dp"
+                app:civ_border_color="#2c6087"
+                app:civ_border_width="2dp" />
+
+
+            <TextView
+                android:id="@+id/kampanyaLayoutText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textSize="10dp"
+                android:text="tetxt kapanya"
+
+                android:textColor="#fff" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
